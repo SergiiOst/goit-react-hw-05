@@ -11,5 +11,5 @@ export const fetchMovies = async () => {
     },
   };
   const response = await axios.get(url, options);
-  return response.data.movies;
+  return response.data.results;
 };
