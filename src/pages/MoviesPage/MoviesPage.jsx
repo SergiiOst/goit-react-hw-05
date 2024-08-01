@@ -1,3 +1,7 @@
 export const MoviesPage = () => {
-  return <div>MoviesPage</div>;
+  return (
+    <div>
+      <h2>Search Films</h2>
+    </div>
+  );
 };
