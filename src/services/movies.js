@@ -10,6 +10,11 @@ export const fetchMovies = async () => {
         "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYzdhYTM5YWQ2YjI3Y2JkMmE2NjY5MzU2OTk2NDZlYiIsIm5iZiI6MTcyMjM4NTYzMS43MjkwNjQsInN1YiI6IjY2YTk3ZTU3ZjljOWY5ZjNhNGUzYWNmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8mr7NgQY2zrMvlFcFKeR_4IuS5TONnUh_oIRniC1_cw",
     },
   };
-  const response = await axios.get(url, options);
-  return response.data.results;
+  try {
+    const response = await axios.get(url, options);
+    return response.data.results;
+  } catch (error) {
+    console.error("Error fetching movies:", error);
+    return [];
+  }
 };

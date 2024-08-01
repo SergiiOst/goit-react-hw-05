@@ -9,7 +9,7 @@ export const MovieList = ({ movies = [] }) => {
 
   return (
     <div>
-      <ul>
+      <ul className={s.list}>
         {movies.map((movie) => (
           <li key={movie.id} className={s.items}>
             <Link
