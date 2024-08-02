@@ -23,6 +23,3 @@ export default function App() {
     </div>
   );
 }
-
-// API read access token = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYzdhYTM5YWQ2YjI3Y2JkMmE2NjY5MzU2OTk2NDZlYiIsIm5iZiI6MTcyMjM4NTYzMS43MjkwNjQsInN1YiI6IjY2YTk3ZTU3ZjljOWY5ZjNhNGUzYWNmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8mr7NgQY2zrMvlFcFKeR_4IuS5TONnUh_oIRniC1_cw
-//API Key: 0c7aa39ad6b27cbd2a666935699646eb

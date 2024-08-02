@@ -1,0 +1,58 @@
+.title {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.content {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+.descrContainer {
+  width: 450px;
+}
+
+.movieTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.descrTitle {
+  margin-top: 10px;
+}
+
+.descrInfo {
+  margin-top: 5px;
+}
+.addInf {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.infoList {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.info {
+  border-radius: 5px;
+  border: 1px solid rgb(216, 244, 3);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.info:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: blue;
+  background-color: yellow;
+}
