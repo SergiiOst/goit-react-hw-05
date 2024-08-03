@@ -7,7 +7,7 @@ const NotFoundPage = () => {
           <h2>Page is not found 404</h2>
         </li>
         <li>
-          <img src="/src/assets/deadpool.png" alt="Sorry..." />
+          <img src="/img/deadpool.png" alt="Sorry..." />
         </li>
       </ul>
     </div>
