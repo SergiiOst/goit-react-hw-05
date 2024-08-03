@@ -3,7 +3,7 @@ import { MovieList } from "../../components/MovieList/MovieList";
 import { fetchMovies } from "../../services/movies";
 import s from "./HomePage.module.css";
 
-export const HomePage = () => {
+const HomePage = () => {
   const [movies, setMovies] = useState([]);
   // const [error, setError] = useState(false);
   // const [isLoading, setIsLoading] = useState(false);
@@ -18,3 +18,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;

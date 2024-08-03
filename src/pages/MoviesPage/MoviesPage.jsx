@@ -5,7 +5,7 @@ import { MovieList } from "../../components/MovieList/MovieList";
 import { Field, Formik, Form } from "formik";
 import { fetchMovieSearchByQuery } from "../../services/movies";
 
-export const MoviesPage = () => {
+const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams([]);
   const [error, setError] = useState(false);
@@ -60,3 +60,5 @@ export const MoviesPage = () => {
     </>
   );
 };
+
+export default MoviesPage;

@@ -10,7 +10,7 @@ import { BASE_IMG_URL, fetchMoviesById } from "../../services/movies";
 import s from "./MovieDetailsPage.module.css";
 import clsx from "clsx";
 
-export const MovieDetailsPage = () => {
+const MovieDetailsPage = () => {
   const params = useParams();
   const [movie, setMovie] = useState(null);
   const defaultImg =
@@ -82,3 +82,5 @@ export const MovieDetailsPage = () => {
     </>
   );
 };
+
+export default MovieDetailsPage;

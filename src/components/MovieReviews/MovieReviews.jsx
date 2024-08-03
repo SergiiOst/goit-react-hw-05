@@ -36,3 +36,5 @@ export const MovieReviews = () => {
     </>
   );
 };
+
+export default MovieReviews;

@@ -1,5 +1,5 @@
 import s from "./NotFoundPage.module.css";
-export const NotFoundPage = () => {
+const NotFoundPage = () => {
   return (
     <div>
       <ul className={s.notFound}>
@@ -13,3 +13,5 @@ export const NotFoundPage = () => {
     </div>
   );
 };
+
+export default NotFoundPage;

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { BASE_IMG_URL, fetchMovieCastById } from "../../services/movies";
 import s from "./MovieCast.module.css";
 
-export const MovieCast = () => {
+const MovieCast = () => {
   const params = useParams();
   const [cast, setCast] = useState([]);
   const defaultImg =
@@ -40,3 +40,5 @@ export const MovieCast = () => {
     </>
   );
 };
+
+export default MovieCast;
