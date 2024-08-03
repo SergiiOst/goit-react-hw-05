@@ -1,5 +1,11 @@
-import { useEffect, useState } from "react";
-import { NavLink, Outlet, useParams } from "react-router-dom";
+import { Suspense, useEffect, useRef, useState } from "react";
+import {
+  Link,
+  NavLink,
+  Outlet,
+  useLocation,
+  useParams,
+} from "react-router-dom";
 import { BASE_IMG_URL, fetchMoviesById } from "../../services/movies";
 import s from "./MovieDetailsPage.module.css";
 import clsx from "clsx";
@@ -12,6 +18,9 @@ export const MovieDetailsPage = () => {
   const infoClass = ({ isActive }) => {
     return clsx(s.info, isActive && s.active);
   };
+  const location = useLocation();
+  const backLink = useRef(location.state || "/");
+
   useEffect(() => {
     const getMovieById = async () => {
       try {
@@ -31,6 +40,9 @@ export const MovieDetailsPage = () => {
   return (
     <>
       <h1 className={s.title}>Movie Details</h1>
+      <Link className={s.backLink} to={backLink.current}>
+        Go Back
+      </Link>
       <div className={s.content}>
         <img
           src={
@@ -64,7 +76,9 @@ export const MovieDetailsPage = () => {
           </NavLink>
         </li>
       </ul>
-      <Outlet />
+      <Suspense fallback={<h3>Loading additional information</h3>}>
+        <Outlet />
+      </Suspense>
     </>
   );
 };

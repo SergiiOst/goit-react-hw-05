@@ -13,6 +13,18 @@
   width: 450px;
 }
 
+.backLink {
+  border-radius: 5px;
+  border: 1px solid rgb(216, 244, 3);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  &:hover {
+    color: blue;
+    background-color: yellow;
+  }
+}
 .movieTitle {
   font-size: 30px;
   font-weight: 600;
